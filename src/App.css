@@ -150,8 +150,8 @@
   }
 
   .sidebar {
-    width: 100px;
-    min-width: 100px;
+    width: 140px;
+    min-width: 140px;
     min-height: 100vh;
 
     padding: 15px 8px;
@@ -201,8 +201,8 @@
 @media (max-width: 380px) {
 
   .sidebar {
-    width: 100px;
-    min-width: 100px;
+    width: 140px;
+    min-width: 140px;
     padding: 12px 6px;
   }
 
