@@ -2052,131 +2052,127 @@
 
 
 /* ====================================
-   SMALL MOBILE
-==================================== */
+   TEAM RESPONSIVE
+===================================== */
 
-@media (max-width: 480px) {
+@media (max-width: 425px) {
 
-  .main-content {
-    width: calc(100% - 240px);
-    max-width: calc(100% - 240px);
-    padding: 20px 12px;
-  }
-
-  .team-header h1 {
-    font-size: 23px;
-  }
-
-  .team-header p {
-    font-size: 12px;
+  .team-page {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .teams-grid {
-    gap: 14px;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
   }
 
   .team-card {
-    padding: 16px;
-    border-radius: 10px;
-  }
-
-  .team-card-header {
-    padding-bottom: 14px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
   }
 
   .team-card-header h2 {
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 1.2;
   }
 
-  .section-title {
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .add-member-button {
-    padding: 6px 9px;
-    font-size: 11px;
-  }
-
-  .leader-section {
-    padding: 15px 0;
-  }
+  /* Leader */
 
   .leader-card {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     padding: 10px;
-    gap: 9px;
   }
 
-  .members-section {
-    padding-top: 15px;
+  .leader-card .member-info {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .leader-card .member-info h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Members */
+
+  .members-list {
+    width: 100%;
   }
 
   .member-card {
-    padding: 9px;
-    gap: 8px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    padding: 10px;
   }
 
   .member-avatar {
-    width: 36px;
-    height: 36px;
-    min-width: 36px;
-    font-size: 14px;
-  }
-
-  .member-info h4 {
-    font-size: 13px;
-  }
-
-  .member-info span,
-  .member-info p {
-    font-size: 11px;
-  }
-
-  .remove-button {
-    padding: 6px 8px;
-    font-size: 10px;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
     flex-shrink: 0;
   }
 
-
-  /* Team Form */
-
-  .team-form-overlay {
-    padding: 12px;
+  .member-info {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
   }
 
-  .team-form {
-    width: 100%;
-    max-width: 100%;
-    padding: 18px;
-    border-radius: 11px;
-  }
+  .member-info h4 {
+    margin: 0 0 3px;
 
-  .team-form-header {
-    margin-bottom: 18px;
-  }
-
-  .team-form-header h2 {
-    font-size: 18px;
-  }
-
-  .team-form-header p {
-    font-size: 12px;
-  }
-
-  .form-group input {
-    padding: 10px 11px;
     font-size: 13px;
+
+    /* IMPORTANT */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .team-form-buttons {
-    gap: 8px;
+  .member-info span {
+    font-size: 11px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .team-form-buttons button {
-    padding: 10px;
-    font-size: 13px;
+  .member-info p {
+    font-size: 11px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+
+  .remove-button {
+    flex-shrink: 0;
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+
+  .add-member-button {
+    padding: 7px 9px;
+    font-size: 11px;
+  }
+
 }
 /*====================================
         Calendar Page
@@ -2717,80 +2713,178 @@
 }
 
 
-/* ========================================
-   RESPONSIVE - 500px
-======================================== */
+/* ====================================
+   CALENDAR - MOBILE
+===================================== */
 
-@media (max-width: 500px) {
+@media (max-width: 425px) {
+
+  .calendar-page {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .calendar-header {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
 
   .calendar-header h1 {
     font-size: 24px;
   }
 
   .calendar-header p {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  /* Navigation */
+
+  .calendar-buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 1fr;
+    gap: 7px;
+    box-sizing: border-box;
+  }
+
+  .calendar-buttons button {
+    width: 100%;
+    min-width: 0;
+    height: 38px;
+    padding: 0 6px;
+    box-sizing: border-box;
+  }
+
+  /* Calendar */
+
+  .calendar-box {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .calendar-title {
-    padding: 16px;
+    padding: 10px 12px;
   }
 
   .calendar-title h2 {
-    font-size: 17px;
+    font-size: 16px;
   }
+
+  /* 7 equal columns */
+
+  .calendar-grid {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+
+    box-sizing: border-box;
+  }
+
+  /* Week names */
 
   .calendar-day-name {
-    min-height: 35px;
-    font-size: 10px;
+    min-width: 0;
+    width: 100%;
+    padding: 6px 0;
+
+    font-size: 9px;
+    text-align: center;
+
+    box-sizing: border-box;
   }
 
-  .calendar-date,
+  /* Empty cells */
+
   .calendar-empty {
-    min-height: 20px;
+    min-width: 0;
+    width: 100%;
+    height: 50px;
+
+    box-sizing: border-box;
   }
+
+  /* Date cells */
 
   .calendar-date {
-    padding: 5px;
+    position: relative;
+
+    min-width: 0;
+    width: 100%;
+    height: 50px;
+
+    padding: 5px 3px;
+
+    box-sizing: border-box;
+    overflow: hidden;
   }
 
   .date-number {
-    width: 24px;
-    height: 24px;
-    font-size: 11px;
+    display: block;
+
+    font-size: 10px;
+    line-height: 1;
   }
+
+  /* Events */
 
   .calendar-events {
-    gap: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 3px;
+
+    margin-top: 7px;
+
+    width: 100%;
+    min-width: 0;
+
+    overflow: hidden;
   }
+
+  /* Convert project/task buttons into dots */
 
   .calendar-event {
-    display: none;
-  }
+    width: 6px;
+    height: 6px;
 
-  .calendar-date:has(.calendar-event) .date-number::after {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 5px;
-    margin-left: 3px;
+    min-width: 6px;
+    max-width: 6px;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
     border-radius: 50%;
-    background: #4f46e5;
+
+    font-size: 0;
+    line-height: 0;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
   }
 
-  .details-header {
-    padding: 18px;
-  }
+  /* Hide project/task text */
 
-  .details-section {
-    padding: 16px;
-  }
-
-  .detail-card {
-    padding: 10px;
-  }
-
-  .detail-status {
+  .calendar-event small {
     display: none;
+  }
+
+  /* Today */
+
+  .calendar-date.today {
+    border-radius: 6px;
   }
 
 }
